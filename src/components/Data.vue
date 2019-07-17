@@ -33,6 +33,7 @@ interface per {
 }
 @Component
 export default class Data extends Vue {
+    // data 的写法 如同function data的写法一样
     showMore:boolean = false
     userInfo = [
         {

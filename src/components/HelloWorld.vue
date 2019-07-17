@@ -9,7 +9,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class HelloWorld extends Vue {
-  @Prop() msg?: string;
+  @Prop() msg!: string; //待查 ！和 ？区别
 }
 </script>
 

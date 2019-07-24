@@ -7,6 +7,7 @@
     <Props :isnormal="isnormal" :isalways="isalways" />
     <Retive />
     <Watche />
+    <AsyncUpdate />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Data from './components/Data.vue';
 import Props from './components/Props.vue';
 import Retive from './components/Retive.vue';
 import Watche from './components/Watche.vue';
+import AsyncUpdate from './components/AsyncUpdate.vue';
 
 @Component({
   components: {
@@ -26,7 +28,8 @@ import Watche from './components/Watche.vue';
     Data,
     Props,
     Retive,
-    Watche
+    Watche,
+    AsyncUpdate
   },
 })
 export default class App extends Vue {

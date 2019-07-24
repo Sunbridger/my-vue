@@ -6,6 +6,7 @@
     <Data />
     <Props :isnormal="isnormal" :isalways="isalways" />
     <Retive />
+    <Watche />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import MyFirst from './components/MyFirst.vue';
 import Data from './components/Data.vue';
 import Props from './components/Props.vue';
 import Retive from './components/Retive.vue';
+import Watche from './components/Watche.vue';
 
 @Component({
   components: {
@@ -23,7 +25,8 @@ import Retive from './components/Retive.vue';
     MyFirst,
     Data,
     Props,
-    Retive
+    Retive,
+    Watche
   },
 })
 export default class App extends Vue {

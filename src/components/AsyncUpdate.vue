@@ -23,9 +23,13 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 
+interface rowObj {
+    id: number;
+    hascolor: boolean;
+}
 @Component
 export default class AsyncUpdate extends Vue {
-    number:number = 0;
+    number = 0;
     people = {
         age: 1,
         likes: {
@@ -35,7 +39,7 @@ export default class AsyncUpdate extends Vue {
             }
         }
     };
-    tableData = [];
+    tableData: Array<rowObj> = [];
     
     handleClick() {
         for (let i=0; i < 1000; i++)
@@ -66,16 +70,17 @@ export default class AsyncUpdate extends Vue {
         });
     }
     created() {
-        // this.tableData = [
-        //     { id: 1, hascolor: false },
-        //     { id: 2, hascolor: false },
-        //     { id: 3, hascolor: false },
-        // ]
         this.tableData = [
-            { id: 1 },
-            { id: 2 },
-            { id: 3 },
+            { id: 1, hascolor: false },
+            { id: 2, hascolor: false },
+            { id: 3, hascolor: false },
         ]
+        // 以下的这种不行 初始化或者替换时没有那个初始属性
+        // this.tableData = [
+        //     { id: 1 },
+        //     { id: 2 },
+        //     { id: 3 },
+        // ]
     }
 }
 </script>

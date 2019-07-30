@@ -21,6 +21,11 @@ import Retive from './components/Retive.vue';
 import Watche from './components/Watche.vue';
 import AsyncUpdate from './components/AsyncUpdate.vue';
 
+interface person {
+  name: string;
+  age: number;
+}
+
 @Component({
   components: {
     HelloWorld,
@@ -35,7 +40,10 @@ import AsyncUpdate from './components/AsyncUpdate.vue';
 export default class App extends Vue {
   isnormal = 3333;
   isalways = '写法方便点咯';
-
+  // 数组泛型
+  students: Array<person> = [
+    { name:'sss', age:9 }
+  ]
 }
 </script>
 

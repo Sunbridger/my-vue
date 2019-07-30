@@ -21,6 +21,7 @@ import Retive from './components/Retive.vue';
 import Watche from './components/Watche.vue';
 import AsyncUpdate from './components/AsyncUpdate.vue';
 
+
 interface person {
   name: string;
   age: number;

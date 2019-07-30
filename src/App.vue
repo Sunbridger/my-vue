@@ -8,6 +8,7 @@
     <Retive />
     <Watche />
     <AsyncUpdate />
+    <router-view></router-view>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Props from './components/Props.vue';
 import Retive from './components/Retive.vue';
 import Watche from './components/Watche.vue';
 import AsyncUpdate from './components/AsyncUpdate.vue';
+import VueRouter from 'vue-router';
 
 
 interface person {

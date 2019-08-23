@@ -1,4 +1,6 @@
-# vue-cli-demo
+#vue-cli vue-property-decorator 主推
+
+## vue-cli-demo
 > 如需测试另行安包
 ## Project setup
 ```

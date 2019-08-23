@@ -15,6 +15,7 @@ import Son from './Son.vue';
         Son
     }
 })
+
 export default class MyFirstr extends Vue {
     // props
     @Prop() param?: String

@@ -46,11 +46,13 @@ export default class AsyncUpdate extends Vue {
         this.number++;
     }
     change() {
+        // 响应式
         this.people.age = 2;
         this.people.likes.fruit = 'wrappp';
         this.people.likes.sports.play = 'scrolll';
     }
     change2() {
+        // 直接赋值的话就是丢掉了之前的引用
         this.people = {
             age: 11,
             likes: {
